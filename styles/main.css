@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #2B2B2B;
+}
+
+.wrapper__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.circle {
+  -webkit-transform: rotate(-17deg);
+          transform: rotate(-17deg);
+  width: 100%;
+  max-width: 237px;
+  height: 237px;
+  padding: 1.5625rem;
+  background-color: #333333;
+  border: 0.875rem solid #F63E00;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .circle {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 1.3rem;
+    border: 0.7rem solid #F63E00;
+  }
+}
+
+@media (max-width: 599px) {
+  .circle {
+    max-width: 180px;
+    max-height: 180px;
+    padding: 1.2rem;
+    border: 0.7rem solid #F63E00;
+  }
+}
+
+.circle:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  border: 0.3125rem solid #F63E00;
+  -webkit-box-shadow: 0rem 0rem 1.5625rem 0.1875rem #FFFFFF;
+          box-shadow: 0rem 0rem 1.5625rem 0.1875rem #FFFFFF;
+}
+
+.circle__quarter {
+  width: 50%;
+  height: 50%;
+  border: 0.875rem solid #F63E00;
+}
+
+@media (max-width: 900px) {
+  .circle__quarter {
+    border: 0.7rem solid #F63E00;
+  }
+}
+
+@media (max-width: 599px) {
+  .circle__quarter {
+    border: 0.7rem solid #F63E00;
+  }
+}
+
+.circle__left--top {
+  border-radius: 0rem 80% 0rem 80%;
+}
+
+.circle__right--top {
+  border-radius: 80% 0rem 80% 0rem;
+}
+
+.circle__left--bottom {
+  border-radius: 80% 0rem 80% 0rem;
+}
+
+.circle__right--bottom {
+  border-radius: 0rem 80% 0rem 80%;
+}
+/*# sourceMappingURL=main.css.map */

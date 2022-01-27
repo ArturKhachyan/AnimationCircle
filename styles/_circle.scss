@@ -1,0 +1,71 @@
+//start circle
+.circle {
+   transform: rotate(-17deg);
+   width: 100%;
+   max-width: 237px;
+   height: 237px;
+   padding: 1.5625rem;
+   background-color: $logo-bg-color;
+   border: $orange-border;
+   border-radius: 50%;
+   overflow: hidden;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   transition: all .5s ease-in-out;
+   cursor: pointer;
+
+   @include tablet-landscape {
+      max-width: 200px;
+      max-height: 200px;
+      padding: 1.3rem;
+      border: $orange-border-mobile;
+   }
+
+   @include for-phone-only {
+      max-width: 180px;
+      max-height: 180px;
+      padding: 1.2rem;
+      border: $orange-border-mobile;
+   }
+
+   &:hover {
+      transform: rotate(360deg);
+      border: 0.3125rem solid $orange-red;
+      box-shadow: 0rem 0rem 1.5625rem 0.1875rem $white-color;
+   }
+
+   &__quarter {
+      width: 50%;
+      height: 50%;
+      border: $orange-border;
+
+      @include tablet-landscape {
+         border: $orange-border-mobile;
+      }
+
+      @include for-phone-only {
+         border: $orange-border-mobile;
+      }
+   }
+
+   &__left--top {
+      border-radius: 0rem 80% 0rem 80%;
+   }
+
+   &__right--top {
+      border-radius: 80% 0rem 80% 0rem;
+   }
+
+   &__left--bottom {
+      border-radius: 80% 0rem 80% 0rem;
+   }
+
+   &__right--bottom {
+      border-radius: 0rem 80% 0rem 80%;
+   }
+}
+
+//end circle
