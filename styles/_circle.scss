@@ -51,20 +51,14 @@
       }
    }
 
-   &__left--top {
-      border-radius: 0rem 80% 0rem 80%;
-   }
-
-   &__right--top {
-      border-radius: 80% 0rem 80% 0rem;
-   }
-
-   &__left--bottom {
-      border-radius: 80% 0rem 80% 0rem;
-   }
-
+   &__left--top,
    &__right--bottom {
       border-radius: 0rem 80% 0rem 80%;
+   }
+
+   &__right--top,
+   &__left--bottom {
+      border-radius: 80% 0rem 80% 0rem;
    }
 }
 
